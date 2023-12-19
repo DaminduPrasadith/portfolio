@@ -1,0 +1,1064 @@
+#home {
+
+  height: 800px;
+  width: auto;
+
+
+}
+#anothervavBar{
+  z-index: 5;
+  position: fixed;
+  height: 100%;
+  width: 500px;
+  top: 0px;
+  display: none;
+  backdrop-filter: blur(20px);
+  
+  
+  
+}
+#closs{
+  position: absolute;
+}
+.anotherlist{
+  display: grid;
+  height: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, .6);
+  list-style: none;
+  padding-top: 10%;
+  padding-bottom:10%;
+  backdrop-filter: blur(20px);
+  
+}
+#hlink  {
+  color: white;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.anotherlist :hover{
+color: #BF8D30;
+font-size: 130%;
+}
+   .mytext{
+  display: inline-flex;
+  position: relative;
+  left: 30%;
+
+  
+  
+  
+}
+.first-text{
+  color: white;
+  font-size: 60px;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+.dynamic-text{
+  font-family: "Lucida Console", "Courier New", monospace;
+  
+  margin-left: 15px;
+  overflow: hidden;
+  height: 60px;
+  
+  
+  
+  
+}
+.dynamic-text li{
+  list-style: none;
+  font-size: 60px;
+  font-weight: 500;
+  color: #FC6D6D;
+  position: relative;
+  top: 0;
+  animation: slide 3s steps(2) infinite;
+  overflow: hidden;
+  
+}
+@keyframes slide{
+  100%{
+    top:-130px;
+    
+  }
+}
+.dynamic-text li span{
+  position: relative;
+}
+.dynamic-text li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height:100%;
+  width: 100%;
+  background: #191714;
+  border-left: 2px solid #FC6D6D;
+  animation: typing 1.5s steps(10) infinite;
+}
+@keyframes typing{
+  100%{
+    left:100%;
+    margin:0 -35px 0 35px;
+  }
+} 
+  
+
+
+
+
+body {
+  margin: 0;
+  background-color: rgba(0, 0, 0, .2);
+  background-image: linear-gradient(315deg, #2234ae 0%, #191714 74%);
+  
+  
+  width:100%;
+  overflow-x: hidden;
+}
+
+.navBar {
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+  -webkit-animation:navBar 1.2s both;
+  -moz-animation: navBar 1.2s both;
+  -o-animation: navBar 1.2s both;
+  animation: navBar 1.2s both;
+ 
+
+}
+@-webkit-keyframes navBar{
+    0%{
+      opacity: 0;
+      -webkit-transform:translatex(-50px);
+    }
+    100%{
+      opacity: 1;
+      -webkit-transform:translatex(0);
+    }
+}
+@keyframes navBar{
+  0%{
+    opacity: 0;
+    transform:translatex(-50px);
+  }
+  100%{
+    opacity: 1;
+    transform:translatex(0);
+  }
+}
+@-moz-keyframes navBar{
+  0%{
+    opacity: 0;
+    -moz-transform:translatex(-50px);
+  }
+  100%{
+    opacity: 1;
+    -moz-transform:translatex(0);
+  }
+}
+@-o-keyframes navBar{
+  0%{
+    opacity: 0;
+    -o-transform:translatex(-50px);
+  }
+  100%{
+    opacity: 1;
+    -o-transform:translatex(0);
+  }
+}
+#menu{
+  position: fixed;
+  right: 30px;
+  top: 20px;
+  cursor: pointer;
+  z-index: 5;
+  display: none;
+}
+#closs{
+  top :20px;
+  cursor: pointer;
+  z-index: 5;
+  display: none;
+}
+#menubtn{
+  background-color: #BF8D30;
+}
+
+
+
+
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+  text-align: right;
+  
+}
+
+.nav {
+  display: inline-block;
+  padding: 20px;
+  color: rgba(217, 183, 13, 1);
+
+  text-shadow: 2px 2px 8px #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.nav:hover {
+  font-size: 110%;
+  color: white;
+
+}
+
+.name {
+  background-color: rgba(153, 180, 191, 0.52);
+  max-width: 456px;
+  max-height: 117px;
+  border-radius: 50px;
+  padding: 5px;
+  -webkit-animation: name 1.2s both;
+  -moz-animation:name 1.2s both ;
+  -o-animation:name 1.2s both ;
+  animation:name 1.2s both ;
+}
+@-web-keyframes name{
+  0%{opacity: 0;
+    -webkit-animation: translateX(-50px);
+  }
+  100%{opacity: 1;
+    -webkit-animation: translateX(0)}
+}
+@-moz-keyframes name{
+  0%{opacity: 0;
+    -moz-animation: translateX(-50px);
+  }
+  100%{opacity: 1;
+    -moz-animation: translateX(0)}
+}
+@-o-keyframes name{
+  0%{opacity: 0;
+    -o-animation: translateX(-50px);
+  }
+  100%{opacity: 1;
+    -o-animation: translateX(0)}
+}
+@keyframes name{
+  0%{opacity: 0;
+    animation: translateX(-50px);
+  }
+  100%{opacity: 1;
+    animation: translateX(0)}
+}
+
+.hello {
+  font-size: 24px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  margin: 35px;
+
+}
+
+.damindu {
+  font-size: 64px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin-left: 30px;
+  text-shadow: 2px 2px 8px black;
+}
+
+.undergraduate {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  padding: 5px;
+  border-radius: 25px;
+  background-color: rgba(153, 180, 191, 0.52);
+  width: 331px;
+  height: 30px;
+  margin: 10px;
+  margin-left: 30px;
+  padding-left: 10px;
+}
+
+.profile {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  z-index: 6;
+
+}
+
+
+
+
+
+
+
+
+.angular {
+  width: 100px;
+
+  height: 100px;
+  position: absolute;
+  left: 200px;
+  border-radius: 160px;
+  background-color: white;
+}
+
+.cpro {
+  width: 100px;
+  height: 100px;
+  left: 950px;
+  border-radius: 160px;
+  background-color: white;
+  position: absolute;
+}
+
+.web {
+  width: 160px;
+  height: 100px;
+  margin-left: 400px;
+  margin-top: 150px;
+
+
+  position: absolute;
+}
+
+.postgres {
+  width: 200px;
+  height: 200px;
+  top: 400px;
+  left: 40px;
+  position: absolute;
+  border-radius: 160px;
+  background-color: white;
+}
+
+.anima1 {
+  background-color: rgb(226, 73, 12);
+  width: 20px;
+  opacity: 30%;
+  border-radius: 160px;
+  height: 20px;
+  position: relative;
+  animation-name: example;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes example {
+  0% {
+    background-color: rgb(255, 255, 255);
+    left: 800px;
+    top: 0px;
+  }
+
+  25% {
+    background-color: rgb(255, 255, 255);
+    left: 800px;
+    top: 150px;
+  }
+
+  50% {
+    background-color: rgb(255, 255, 255);
+    left: 800px;
+    top: 200px;
+  }
+
+  75% {
+    background-color: rgb(255, 255, 255);
+    left: 800px;
+    top: 200px;
+  }
+
+  100% {
+    background-color: rgb(255, 255, 255);
+    left: 800px;
+    top: 0px;
+  }
+}
+
+.anima2 {
+  background-color: rgb(226, 73, 12);
+  width: 20px;
+  opacity: 30%;
+  border-radius: 160px;
+  height: 20px;
+  position: relative;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes example {
+  0% {
+    background-color: rgb(255, 255, 255);
+    left: 1000px;
+    top: 0px;
+  }
+
+  25% {
+    background-color: rgb(255, 255, 255);
+    left: 1000px;
+    top: 150px;
+  }
+
+  50% {
+    background-color: rgb(255, 255, 255);
+    left: 1000px;
+    top: 200px;
+  }
+
+  75% {
+    background-color: rgb(255, 255, 255);
+    left: 1000px;
+    top: 200px;
+  }
+
+  100% {
+    background-color: rgb(255, 255, 255);
+    left: 1000px;
+    top: 0px;
+  }
+}
+
+.anima3 {
+  background-color: rgb(226, 73, 12);
+  width: 20px;
+  opacity: 30%;
+  border-radius: 160px;
+  height: 20px;
+  position: relative;
+  animation-name: example;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes example {
+  0% {
+    background-color: rgb(255, 255, 255);
+    left: 50px;
+    top: 0px;
+  }
+
+  25% {
+    background-color: rgb(255, 255, 255);
+    left: 50px;
+    top: 150px;
+  }
+
+  50% {
+    background-color: rgb(255, 255, 255);
+    left: 50px;
+    top: 200px;
+  }
+
+  75% {
+    background-color: rgb(255, 255, 255);
+    left: 50px;
+    top: 200px;
+  }
+
+  100% {
+    background-color: rgb(255, 255, 255);
+    left: 50px;
+    top: 0px;
+  }
+}
+
+.anima4 {
+  background-color: rgb(226, 73, 12);
+  width: 20px;
+  opacity: 30%;
+  border-radius: 160px;
+  height: 20px;
+  position: relative;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes example {
+  0% {
+    background-color: rgb(255, 255, 255);
+    left: 900px;
+    top: 0px;
+  }
+
+  25% {
+    background-color: rgb(255, 255, 255);
+    left: 900px;
+    top: 150px;
+  }
+
+  50% {
+    background-color: rgb(255, 255, 255);
+    left: 900px;
+    top: 200px;
+  }
+
+  75% {
+    background-color: rgb(255, 255, 255);
+    left: 900px;
+    top: 200px;
+  }
+
+  100% {
+    background-color: rgb(255, 255, 255);
+    left: 900px;
+    top: 0px;
+  }
+}
+
+
+
+h1 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(217, 183, 13, 1);
+  z-index: 100;
+}
+
+.cover {
+  opacity: 100%;
+  width: auto;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: -2;
+  position: relative;
+  filter: opacity(50%);
+
+}
+
+.myself {
+  background: transparent;
+  
+  border: 2px solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  font-family: Arial, Helvetica, sans-serif;
+  width: 600px;
+  height: 300px;
+  position: absolute;
+  padding: 30px;
+  text-align: left;
+  color: white;
+  left: 30%;
+  top: 1100px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 8px rgb(0, 0, 0);
+
+
+
+}
+
+
+.myself:hover {
+  backdrop-filter: blur(8px);
+}
+
+ul {
+
+  color: white;
+  font-family: "Lucida Console", "Courier New", monospace;
+
+}
+
+.gmail_logo {
+  width: 50px;
+  height: auto;
+  top: 2px;
+  position: relative;
+}
+
+.two {
+  left: 20%;
+  position: relative;
+
+}
+
+.gmail {
+  left: 80px;
+  top: 0px;
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.whatsapp_logo {
+  width: 50px;
+  height: auto;
+  position: relative;
+  left: 60%;
+  top: -50px;
+}
+
+.whatsapp {
+
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  position: relative;
+  left: 66%;
+  top: -100px;
+}
+
+.form {
+
+  background-color: rgba(0, 0, 0, 0.66);
+  border: 2px solid rgba(255, 255, 255, .2);
+  margin-bottom: 5%;
+  width: 800px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+  border-radius: 25px;
+  backdrop-filter: blur(10px);
+  
+
+}
+
+
+input[type=text],
+select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+
+input[type=submit] {
+
+  background-color: rgba(217, 183, 13, 1);
+  color: white;
+  padding: 14px 20px;
+  margin-left: 5%;
+  position: relative;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  
+
+}
+
+input[type=submit]:hover {
+  background-color: #BF8D30;
+}
+
+.skillsall {
+  position: relative;
+  text-align: center;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+  color: white;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.responsive {
+
+  margin: 30px;
+  display: inline-block;
+  width: 150px;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.gallery {
+  padding: 20px;
+}
+
+#skills {
+  height: auto;
+}
+
+.workdtls {
+
+  margin: 30px;
+  text-align: center;
+  width: 400px;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.25);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.workgallery {
+  padding: 20px;
+}
+
+.workdesc {
+  padding: 15px;
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.workimg {
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.workdtls:hover {
+  background-color: rgba(0, 0, 0, .2);
+}
+
+.adobep {
+  text-align: center;
+  padding: 5px;
+}
+
+#about {
+  
+}
+
+.social {
+  padding: 10px;
+}
+
+footer {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.25);
+  color: white;
+  height: 50px;
+
+}
+
+footer:hover {
+  background-color: rgba(0, 0, 0, .2);
+}
+
+/*............................................600px.......................*/
+@media only screen and (max-width: 600px) {
+  .name {
+    width: 50%; 
+  }
+  .damindu {
+    font-size: 34px;
+  }
+ .undergraduate {
+    margin-left: 5px;
+    font-size: 14px;
+    width: 200px;
+  }
+  .angular {
+    margin-left: auto;
+    top: 600px;
+  }
+  .cover {
+    width: 600px;
+    height: auto;
+  }
+  .myself {
+    left: 10px;
+    width: 450px;
+    height: auto;
+    top: 900px;
+    padding: 15px;
+    font-size: 15px;
+  }
+  .whatsapp_logo {
+    left: 20%;
+    top: 0;
+  }
+  .whatsapp {
+    left: 37%;
+    top: -50px;
+  }
+  input[type=submit] {
+    left: 0;
+    position: absolute;
+    padding: 1%;
+    margin-left: 20%;
+    bottom:5%;
+  }
+  .navBar a {
+    display: block;
+    z-index: 100;
+    text-align: right;
+  }
+  #menu{
+    display: block;
+  }
+  #closs{
+    display: block;
+  }
+  #anothervavBar{
+    display: block;
+  }
+  .navBar{
+    display: none;
+  }
+  .postgres{display: none;}
+  .mytext{
+    left: 10%;
+  }
+  .first-text{
+    font-size: 30px;
+  }
+ 
+
+}
+/*..........................iphone14..............................*/
+@media only screen and (max-width: 430px) {
+  .name {
+    width: 50%; 
+    
+  }
+  .hello{
+    font-size: 11px;
+  }
+
+  .damindu {
+    font-size: 24px;
+  }
+  .profile{
+    left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+ .undergraduate {
+    margin-left: 5px;
+    font-size: 14px;
+    width: 200px;
+  }
+  .angular {
+    margin-left: auto;
+    top: 600px;
+  }
+  .cover {
+    width: 420px;
+    height: auto;
+  }
+  .myself {
+    left: 10px;
+    width: 300px;
+    height: auto;
+    top: 900px;
+    padding: 15px;
+    font-size: 15px;
+  }
+  .whatsapp_logo {
+    left: 20%;
+    top: 0;
+  }
+  .whatsapp {
+    left: 37%;
+    top: -50px;
+  }
+  input[type=submit] {
+    left: 0;
+    position: absolute;
+    padding: 1%;
+    margin-left: 20%;
+    bottom:5%;
+  }
+  .navBar a {
+    display: block;
+    z-index: 100;
+    text-align: right;
+  }
+  #menu{
+    left: 370px;
+    top: 20px;
+    display: fixed;
+  }
+  #closs{
+    display: block;
+  }
+  #anothervavBar{
+    display: block;
+  }
+  .navBar{
+    display: none;
+  }
+  .postgres{display: none;}
+  .mytext{
+    left: 10%;
+  }
+  .first-text{
+    font-size: 30px;
+  }
+  .anima1{
+    display: none;
+  }
+  .anima2{
+    display: none;
+  }
+  .anima3{
+    display: none;
+  }
+  .anima4{
+    display: none;
+    
+  }
+  .cpro{
+    display: none;
+  }
+ .form{
+  width: 300px;
+ }
+ .dynamic-text{
+  margin-left: 0px;
+  font-size: 15px;
+ }
+ .mytext{
+  display: grid;
+  margin-top: 30px;
+  margin-left: 1px;
+ }
+ #anothervavBar{
+  width: 200px;
+ }
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 375px) {
+  .name {
+    width: 50%; 
+    
+  }
+  .hello{
+    font-size: 11px;
+  }
+
+  .damindu {
+    font-size: 24px;
+  }
+  .profile{
+    left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+ .undergraduate {
+    margin-left: 5px;
+    font-size: 14px;
+    width: 200px;
+  }
+  .angular {
+    margin-left: auto;
+    top: 600px;
+  }
+  .cover {
+    width: 420px;
+    height: auto;
+  }
+  .myself {
+    left: 10px;
+    width: 250px;
+    height: auto;
+    top: 900px;
+    padding: 15px;
+    font-size: 15px;
+  }
+  .whatsapp_logo {
+    left: 20%;
+    top: 0;
+  }
+  .whatsapp {
+    left: 37%;
+    top: -50px;
+  }
+  input[type=submit] {
+    left: 0;
+    position: absolute;
+    padding: 1%;
+    margin-left: 20%;
+    bottom:5%;
+  }
+  .navBar a {
+    display: block;
+    z-index: 100;
+    text-align: right;
+  }
+  #menu{
+    left: 330px;
+    top: 20px;
+    display: fixed;
+  }
+  #closs{
+    display: block;
+  }
+  #anothervavBar{
+    display: block;
+  }
+  .navBar{
+    display: none;
+  }
+  .postgres{display: none;}
+  .mytext{
+    left: 10%;
+  }
+  .first-text{
+    font-size: 30px;
+  }
+  .anima1{
+    display: none;
+  }
+  .anima2{
+    display: none;
+  }
+  .anima3{
+    display: none;
+  }
+  .anima4{
+    display: none;
+    
+  }
+  .cpro{
+    display: none;
+  }
+ .form{
+  width: 250px;
+ }
+ .dynamic-text{
+  margin-left: 0px;
+  font-size: 15px;
+ }
+ .mytext{
+  display: grid;
+  margin-top: 30px;
+  margin-left: 1px;
+ }
+ #anothervavBar{
+  width: 200px;
+ }
+}
+@media only screen and (min-width: 1920px) {
+  .cpro{left: 1800px;}}
